@@ -1,0 +1,20 @@
+package day0107;
+
+/**
+ * 사용자 정의 예외처리 클래스
+ * Exception(Runtime Exception) 상속받는다.
+ * @author Owner
+ */
+@SuppressWarnings("serial")
+public class LoginException extends Exception {
+	public LoginException() {
+		this("로그인 실패");
+	}//LoginException
+	
+	public LoginException(String msg) {
+		super( msg );// 예외처리 객체를 사용하여 예외메세지를 출력할 수 있다.
+		
+	}//LoginException
+	
+	
+}//class
